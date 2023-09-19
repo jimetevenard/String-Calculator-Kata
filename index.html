@@ -4,56 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spring Calculator Kata</title>
-    <style>
-        body {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            color: #263238;
-        }
-        code {
-            background-color: #dde4e7;
-            padding: 1px 3px;
-        }
-        h1, h2, h3, .title-like {
-            text-align: center;
-        }
-        .title-like {
-            font-size: 1.3em;
-        }
-        h1 .small {
-            color: #3b4b53;
-            font-size: 0.8em;
-            font-weight: 400;
-        }
-        h2 {
-            margin-top: 1.7em;
-        }
-        .consigne {
-            max-width: 660px;
-            margin: 3.5em auto;
-        }
-        .consigne ul {
-            padding: 0;
-            list-style: square;
-            list-style-position: inside;
-        }
-        .consigne ul p {
-            margin-bottom: 0.5rem;
-            font-weight: 500;
-        } 
-        
-        #flems-editor {
-            height: 80vh;
-            width: 80vw;
-            padding: 0;
-            margin: 20px auto;
-            box-shadow: 7px 7px 20px rgba(58, 64, 64, 0.4);
-        }
-
-        /* Remove the visual-clutter Flems logo in the editor background */
-        #flems-editor div.flems div.editor > nav + div::after {
-           background-image: none; 
-        }
-    </style>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <h1><span class="small">Code exercise</span><br />String Calculator Kata</h1>
@@ -109,44 +60,7 @@
         </ul>
     </div>
 
-
-
     <script src="https://flems.io/flems.html" type="text/javascript" charset="utf-8"></script>
-    <script>
-    const flems = Flems(document.getElementById('flems-editor'), {
-        files: [
-            {
-                name: 'sum.js',
-                content: '/**\n *  Create a simple String Calculator function.\n *  \n *  The input is a string, the method can take up to two numbers,\n *  separated by commas, and will return their sum as a number. \n *\n *  For example, it must take “” or “1” or “1,2” as inputs.\n *  - "1,2" should return 3\n *  - "42" should return 42.\n *\n *  For an empty string: "", it will return 0 \n */\nfunction calculateSum(){\n\n}'
-            },
-            {
-                name: 'sum.test.js',
-                content: 'mocha.setup("bdd");\nconst assert = chai.assert, expect = chai.expect;\n\n// "Chai" assertion library - documentation:\n// https://www.chaijs.com/api/assert/\n\ndescribe("Some passing tests:", () => {\n  it("2 + 2 is equal to 4", () => {\n    assert.equal( (2 + 2) , 4);\n  });\n  it("4 + 4 is equal to 8", () => {\n    assert.equal( (4 + 4) , 8);\n  });\n  it("These characters name are not equals", () => {\n    assert.notEqual( "Dom Juan" , "Sganarelle" );\n  });\n});\ndescribe("A non-passing test:", () => {\n  it("2 + 2 equal to 8", () => {\n    assert.equal( (2 + 2) , 8);\n  });\n});\n\nmocha.run();'
-            }
-        ],
-        links: [
-            {
-                name: 'mocha-html-init',
-                type: 'script',
-                url: 'https://gist.githubusercontent.com/jimetevenard/7ce604732ebf1100e1fb1aadd9e21af9/raw/4d3cf23f00ddbd90bcdaba5a505bf1cc8b3f0642/prepare-mocha.js'
-            }, {
-                name: 'mocha.css',
-                type: 'style',
-                url: 'https://unpkg.com/mocha@10.2.0/mocha.css'
-            }, {
-                name: 'chai',
-                type: 'script',
-                url: 'https://unpkg.com/chai@4.3.8/chai.js'
-            }, {
-                name: 'mocha',
-                type: 'script',
-                url: 'https://unpkg.com/mocha@10.2.0/mocha.js'
-            }
-        ],
-        selected: 'summ.js',
-        linkTabs: false,
-        middle: 65
-    })
-    </script>
+    <script src="editor.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
