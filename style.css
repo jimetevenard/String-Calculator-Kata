@@ -3,7 +3,7 @@ body {
     color: #263238;
 }
 code {
-    background-color: #dde4e7;
+    background-color: #eceff0;
     padding: 1px 3px;
 }
 h1, h2, h3, .title-like {
@@ -33,6 +33,12 @@ h2 {
     margin-bottom: 0.5rem;
     font-weight: 500;
 } 
+.complement {
+    font-size: 1.1em;
+    font-weight: 300;
+    text-align: center;
+    color: #45535a;
+}
 
 #flems-editor {
     height: 80vh;
