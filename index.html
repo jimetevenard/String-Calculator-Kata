@@ -49,21 +49,30 @@
         <p>
             Make sure you only test for correct inputs.<br />
             There is no need to test for invalid inputs for this kata</p>
-        
+        <hr />
         
         <h2>Step 2 - More than two numbers</h2>
         <p>Allow the <code>calculateSum()</code> function to handle an unknown amount of numbers</p>
 
 
-        <h2>Step 3 - Allow a second separator</h2>
-        <p>Allow the <code>calculateSum()</code> function to handle new lines between numbers (instead of commas).</p>
+        <h2>Step 3 - Allow a second symbol as separator</h2>
+        <p>Allow the <code>calculateSum()</code> function to handle the symbol <code>@</code> between numbers (in addition of commas).</p>
         <ul>
             <p>Examples:</p>
-
-            <li>The following input is ok: <code>“1\n2,3”</code> (will equal 6)</li>
-            <li>The following input is NOT ok: <code>“1,\n”</code> (not need to prove it by tests - just clarifying)</li>
+            
+            <li>The input <code>"1@2,3"</code> should return <code>6</code></li>
+            <li>The input <code>"2@2@6"</code> should return <code>10</code>.</li>
+            <li>The input <code>"2,3,4@3,2"</code> should return <code>14</code>.</li>
+            <li>The previous cases should continue to work</li>
         </ul>
     </div>
+
+    <footer>
+        This web app is made by <a href="https://github.com/jimetevenard">Jim Etevenard</a>,
+        editor is powered by <a href="https://github.com/porsager/flems">Flems</a>.
+        <br>
+        The String Calcutor Kata were originally authored by <a href="https://osherove.com/tdd-kata-1">Roy Osherove</a>
+    </footer>
 
     <script src="https://flems.io/flems.html" type="text/javascript" charset="utf-8"></script>
     <script src="editor.js" type="text/javascript" charset="utf-8"></script>
