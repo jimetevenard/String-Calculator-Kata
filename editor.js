@@ -7,7 +7,7 @@
             },
             {
                 name: 'sum.test.js',
-                content: 'mocha.setup("bdd");\nconst assert = chai.assert, expect = chai.expect;\n\n// "Chai" assertion library - documentation:\n// https://www.chaijs.com/api/assert/\n\ndescribe("Some passing tests:", () => {\n  it("2 + 2 is equal to 4", () => {\n    assert.equal( (2 + 2) , 4);\n  });\n  it("4 + 4 is equal to 8", () => {\n    assert.equal( (4 + 4) , 8);\n  });\n  it("These characters\' names are not equal", () => {\n    assert.notEqual( "Dom Juan" , "Sganarelle" );\n  });\n});\ndescribe("A non-passing test:", () => {\n  it("2 + 2 equal to 8", () => {\n    assert.equal( (2 + 2) , 8);\n  });\n});\n\nmocha.run();'
+                content: 'mocha.setup("bdd");\nconst assert = chai.assert, expect = chai.expect;\n\n// "Chai" assertion library - documentation:\n// https://www.chaijs.com/api/assert/\n\ndescribe("Some passing tests:", () => {\n  /**\n   * NB: The test cases below are EXAMPLES.\n   *     Feel free to modify them to test your actual work.\n   */\n  it("2 + 2 is equal to 4", () => {\n    assert.equal( (2 + 2) , 4);\n  });\n  it("4 + 4 is equal to 8", () => {\n    assert.equal( (4 + 4) , 8);\n  });\n  it("These characters\' names are not equal", () => {\n    assert.notEqual( "Dom Juan" , "Sganarelle" );\n  });\n});\ndescribe("A non-passing test:", () => {\n  it("2 + 2 equal to 8", () => {\n    assert.equal( (2 + 2) , 8);\n  });\n});\n\nmocha.run();'
             }
         ],
         links: [
